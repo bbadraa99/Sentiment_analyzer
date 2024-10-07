@@ -11,7 +11,7 @@ git clone https://github.com/bbadraa99/Sentiment_analyzer.git
 2. Create your own Python virtual environment
 
 ```bash
-python -m venv myenv
+python3 -m venv myenv
 ```
    - Activate your virtual env with
     - Windows: run "myenv\Scripts\activate"
@@ -19,11 +19,11 @@ python -m venv myenv
 3. Run the program
     - Download Flask: 
       ```bash
-      pip install Flask transformers
+      python3 -m pip install Flask transformers
       ```
     - Run the program
       ```bash
-      python main.py
+      python3 main.py
       ```
 4. Interact with the model
    - Go to http://localhost:3000/ 
