@@ -27,7 +27,7 @@ python3 -m venv myenv
         source myenv/bin/activate
         ```
 3. Run the program
-    - Download Flask: 
+    - Download necessary packages 
       ```bash
       python3 -m pip install fastapi transformers uvicorn torch
       ```
