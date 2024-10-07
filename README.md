@@ -19,7 +19,7 @@ python3 -m venv myenv
 3. Run the program
     - Download Flask: 
       ```bash
-      python3 -m pip install Flask transformers
+      python3 -m pip install fastapi transformers uvicorn
       ```
     - Run the program
       ```bash
