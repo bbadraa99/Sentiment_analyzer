@@ -8,6 +8,10 @@ In this task, I worked on a machine learning model that can classify the sentime
 ```bash
 git clone https://github.com/bbadraa99/Sentiment_analyzer.git
 ```
+1.2 Move to the website_service directory 
+```bash
+cd website_service
+```
 2. Create your own Python virtual environment
 
 ```bash
