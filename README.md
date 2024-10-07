@@ -18,11 +18,11 @@ cd web_service
 python3 -m venv myenv
 ```
    - Activate your virtual env with
-    - Windows: run
+     - Windows: run
          ```bash
          myenv\Scripts\activate
          ```
-    - Mac / OS: run
+     - Mac / OS: run
         ```bash
         source myenv/bin/activate
         ```
