@@ -8,9 +8,9 @@ In this task, I worked on a machine learning model that can classify the sentime
 ```bash
 git clone https://github.com/bbadraa99/Sentiment_analyzer.git
 ```
-1.2 Move to the website_service directory 
+1.2 Move to the web_service directory 
 ```bash
-cd website_service
+cd web_service
 ```
 2. Create your own Python virtual environment
 
@@ -35,7 +35,7 @@ python3 -m venv myenv
       ```bash
       uvicorn main:app --reload
       ```
-    - Run this command with custom text from a "different terminal"
+    - Open up a different terminal and run curl command with custom text
       ```bash
       curl -X POST "http://127.0.0.1:8000/predict" -H "Content-Type: application/json" -d "{\"text\": \"The stock market is doing well today.\"}"
       ```
