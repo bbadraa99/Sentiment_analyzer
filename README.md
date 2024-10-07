@@ -14,17 +14,31 @@ git clone https://github.com/bbadraa99/Sentiment_analyzer.git
 python3 -m venv myenv
 ```
    - Activate your virtual env with
-    - Windows: run "myenv\Scripts\activate"
-    - Mac / OS: run "source myenv/bin/activate"
+    - Windows: run
+         ```bash
+         myenv\Scripts\activate
+         ```
+    - Mac / OS: run
+        ```bash
+        source myenv/bin/activate
+        ```
 3. Run the program
     - Download Flask: 
       ```bash
-      python3 -m pip install fastapi transformers uvicorn
+      python3 -m pip install fastapi transformers uvicorn torch
       ```
-    - Run the program
+    - Run the program. It will wait for curl command
       ```bash
-      python3 main.py
+      uvicorn main:app --reload
       ```
+    - Run this command with custom text from a "different terminal"
+      ```bash
+      curl -X POST "http://127.0.0.1:8000/predict" -H "Content-Type: application/json" -d "{\"text\": \"The stock market is doing well today.\"}"
+      ```
+      ```bash
+      curl -X POST "http://127.0.0.1:8000/predict" -H "Content-Type: application/json" -d "{\"text\": \"Global stock markets saw modest gains today as investors grew optimistic about central banks' potential easing of interest rates, following signs of slowing inflation in key economies. Analysts remain cautiously optimistic as inflation levels appear to stabilize.\"}"
+      ```
+      
 4. Interact with the model
    - Go to http://localhost:3000/ 
    - Type your financial news
