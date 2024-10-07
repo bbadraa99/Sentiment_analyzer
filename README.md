@@ -19,7 +19,7 @@ python -m venv myenv
 3. Run the program
     - Download Flask: 
       ```bash
-      pip install Flask
+      pip install Flask transformers
       ```
     - Run the program
       ```bash
